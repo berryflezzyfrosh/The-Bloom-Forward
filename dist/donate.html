@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Donate to The Bloom Forward — choose a preset amount or custom donation, one-time or monthly, and track our progress toward our goal." />
+  <title>Donate — The Bloom Forward</title>
+  <link rel="icon" type="image/jpeg" href="/IMG-20260727-WA0093.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+<nav class="navbar light-nav" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="nav-logo"><img src="/IMG-20260727-WA0093.jpg" alt="The Bloom Forward" /><div class="nav-logo-text"><span class="brand-name">The Bloom Forward</span><span class="brand-tagline">Growing Communities</span></div></a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="programs.html" class="nav-link">Programs</a></li>
+      <li><a href="events.html" class="nav-link">Events</a></li>
+      <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="donate.html" class="btn btn-primary btn-sm active">Donate Now</a></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('/fds.jpg')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="container page-hero-content">
+    <span class="section-label" style="justify-content:center;color:var(--teal-300)">Make a Gift</span>
+    <h1>Donate &amp; Help Communities Bloom</h1>
+    <p>Every contribution, large or small, plants a seed of hope that grows for generations.</p>
+    <nav class="breadcrumb"><a href="index.html">Home</a><span class="sep">›</span><span>Donate</span></nav>
+  </div>
+</section>
+
+<!-- Donation Section -->
+<section class="section">
+  <div class="container">
+    <div class="donate-grid">
+
+      <!-- Form -->
+      <div class="donate-form-wrap fade-up">
+        <div class="donate-card">
+          <input type="text" name="_hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true" />
+          <h2>Make Your Donation</h2>
+          <p style="color:var(--gray-500);margin-bottom:var(--space-3);font-size:.95rem">Choose an amount, select a programme, and complete the secure form below.</p>
+
+          <div class="dtype-toggle">
+            <button class="dtype-btn active" data-type="once">One-Time</button>
+            <button class="dtype-btn" data-type="monthly">Monthly</button>
+          </div>
+
+          <label class="form-label" style="margin-top:var(--space-3)">Choose Amount</label>
+          <div class="donate-amount-grid">
+            <button class="da-amount" data-amount="25">$25</button>
+            <button class="da-amount active" data-amount="50">$50</button>
+            <button class="da-amount" data-amount="100">$100</button>
+            <button class="da-amount" data-amount="250">$250</button>
+            <button class="da-amount" data-amount="500">$500</button>
+            <button class="da-amount custom-trigger" data-amount="custom">Custom</button>
+          </div>
+          <div id="customAmountWrap" class="custom-input-wrap" style="display:none;margin-top:.75rem">
+            <input type="number" id="customAmount" class="form-control" placeholder="Enter custom amount ($)" min="1" />
+          </div>
+
+          <div class="form-group" style="margin-top:var(--space-3)">
+            <label class="form-label" for="dProgram">Direct Your Gift</label>
+            <select id="dProgram" class="form-control">
+              <option value="general">Where Most Needed</option>
+              <option>Education</option><option>Community Development</option>
+              <option>Women's Empowerment</option><option>Youth Development</option>
+              <option>Health &amp; Wellness</option><option>Environmental Sustainability</option>
+              <option>Feeding Programme</option><option>Christmas Outreach</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group"><label class="form-label" for="dName">Full Name *</label><input type="text" id="dName" class="form-control" placeholder="Your name" required /></div>
+            <div class="form-group"><label class="form-label" for="dEmail">Email *</label><input type="email" id="dEmail" class="form-control" placeholder="you@email.com" required /></div>
+          </div>
+
+          <label class="form-label">Payment Method</label>
+          <div class="pay-methods">
+            <label class="pay-method active"><input type="radio" name="pay" value="card" checked /><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><span>Credit Card</span></label>
+            <label class="pay-method"><input type="radio" name="pay" value="paypal" /><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 6h7.5c2.5 0 4.5 1.7 4.5 4.3 0 3.5-3 5.7-6 5.7h-2l-1 4H8l1.5-7m0 0h2.5c1 0 2-.6 2-1.8 0-1-.8-1.4-1.8-1.4h-2L9.5 13z"/></svg><span>PayPal</span></label>
+            <label class="pay-method"><input type="radio" name="pay" value="bank" /><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg><span>Bank Transfer</span></label>
+          </div>
+
+          <div id="cardFields" style="margin-top:var(--space-2)">
+            <div class="form-group"><label class="form-label" for="cardNum">Card Number</label><input type="text" id="cardNum" class="form-control" placeholder="1234 5678 9012 3456" inputmode="numeric" maxlength="19" /></div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label" for="cardExp">Expiry</label><input type="text" id="cardExp" class="form-control" placeholder="MM/YY" maxlength="5" /></div>
+              <div class="form-group"><label class="form-label" for="cardCvc">CVC</label><input type="text" id="cardCvc" class="form-control" placeholder="123" maxlength="4" /></div>
+            </div>
+          </div>
+
+          <button type="button" id="donateSubmit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;margin-top:var(--space-2)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Donate <span id="donateAmountLabel">$50</span> <span id="donateTypeLabel">Once</span>
+          </button>
+          <p style="text-align:center;font-size:.82rem;color:var(--gray-500);margin-top:.75rem;display:flex;align-items:center;justify-content:center;gap:.4rem">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Secure 256-bit SSL encrypted payment
+          </p>
+          <p id="donateMsg" style="text-align:center;margin-top:.75rem;font-size:.9rem;display:none"></p>
+        </div>
+      </div>
+
+      <!-- Side -->
+      <div class="donate-side fade-up" style="transition-delay:.2s">
+        <div class="donate-progress-card">
+          <h3>2025 Annual Fund</h3>
+          <p style="font-size:.9rem;color:rgba(255,255,255,.8);margin-bottom:var(--space-2)">Help us reach our $2.4M goal to fund all six programmes this year.</p>
+          <div class="dp-big"><span class="dp-amount">$1.8M</span><span class="dp-of">of $2.4M goal</span></div>
+          <div class="progress-track" style="height:12px;margin:var(--space-2) 0"><div class="progress-fill" data-width="75" style="background:linear-gradient(90deg,var(--teal-300),var(--teal-200))"></div></div>
+          <div style="display:flex;justify-content:space-between;font-size:.85rem;color:rgba(255,255,255,.7)"><span>75% Funded</span><span>$600K to go</span></div>
+          <div class="dp-stats">
+            <div><span class="dp-stat-num">2,847</span><span class="dp-stat-label">Donors</span></div>
+            <div><span class="dp-stat-num">185</span><span class="dp-stat-label">Projects</span></div>
+            <div><span class="dp-stat-num">48K</span><span class="dp-stat-label">Lives Touched</span></div>
+          </div>
+        </div>
+
+        <div class="impact-card">
+          <h4>Your Impact</h4>
+          <div class="impact-item"><span class="impact-amount">$25</span><p>Provides a month of school supplies for one child.</p></div>
+          <div class="impact-item"><span class="impact-amount">$50</span><p>Feeds a family of five for two weeks.</p></div>
+          <div class="impact-item"><span class="impact-amount">$100</span><p>Funds a mobile clinic visit for an entire village.</p></div>
+          <div class="impact-item"><span class="impact-amount">$250</span><p>Sponsors a woman's full vocational training course.</p></div>
+          <div class="impact-item"><span class="impact-amount">$500</span><p>Builds a community water filter serving 100 families.</p></div>
+        </div>
+
+        <div class="donate-verse-card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--teal-300)" stroke-width="1.5"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          <p style="font-style:italic;color:var(--teal-100);font-size:.92rem;margin:0">"Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver." — 2 Corinthians 9:7</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Donor testimonial -->
+<section class="section" style="background:var(--off-white)">
+  <div class="container text-center">
+    <div class="fade-up" style="max-width:720px;margin:0 auto">
+      <div class="stars" style="font-size:1.2rem;margin-bottom:var(--space-2)">★★★★★</div>
+      <p style="font-family:var(--font-heading);font-size:clamp(1.3rem,3vw,1.8rem);line-height:1.5;color:var(--teal-800);font-style:italic">"I have been a monthly donor for three years. The updates I receive show exactly where my money goes — and the impact is real. I can see the children I'm helping grow."</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:.75rem;margin-top:var(--space-3)">
+        <img src="/IMG-20260728-WA0056.jpg" alt="Donor" style="width:52px;height:52px;border-radius:50%;object-fit:cover;border:3px solid var(--teal-200)" />
+        <div style="text-align:left"><p style="font-weight:700;color:var(--teal-800)">Michael Chen</p><p style="font-size:.85rem;color:var(--gray-500)">Monthly Donor since 2022</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="footer-logo"><img src="/IMG-20260727-WA0093.jpg" alt="The Bloom Forward" /><span class="footer-logo-name">The Bloom Forward</span></div><p>Nurturing communities through faith, education, health, and sustainable opportunity.</p><div class="footer-social"><a href="#" class="social-link" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" class="social-link" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div></div>
+      <div><h5 class="footer-heading">Quick Links</h5><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Programs</a></li><li><a href="events.html">Events</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5 class="footer-heading">Programs</h5><ul class="footer-links"><li><a href="programs.html">Education</a></li><li><a href="programs.html">Community Development</a></li><li><a href="programs.html">Women's Empowerment</a></li><li><a href="programs.html">Youth Development</a></li><li><a href="programs.html">Health &amp; Wellness</a></li></ul></div>
+      <div><h5 class="footer-heading">Contact</h5><div class="footer-contact-item"><svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>hello@thebloomforward.org</span></div><div class="footer-contact-item"><svg class="footer-contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.23h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+233 (0) 302 000 111</span></div></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-2)"><p>&copy; 2025 The Bloom Forward. All rights reserved.</p><div style="display:flex;gap:var(--space-3)"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div></div></div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+<script type="module" src="script.js"></script>
+</body>
+</html>
